@@ -6,6 +6,7 @@
 
     --mainText:black;
     --secondaryText: #495156;
+    --themeDotBorder: #24292e;
 }
 html, body{
     padding: 0;
@@ -67,7 +68,7 @@ h6{ font-size: 16px;}
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 20em;
+    /* grid-template-rows: 3em 20em; */
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -113,11 +114,33 @@ h6{ font-size: 16px;}
 
 .left-column {
     grid-area: left-column;
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+#profile_pic {
+    display: block;
+    margin: 0px auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}
+#theme-option-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid var(--themeDotBorder);
+    cursor: pointer;
+}
+
 .right-column {
-    grid-area: right-column;
-    
+    grid-area: right-column; 
 }
 
 
