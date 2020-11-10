@@ -7,6 +7,7 @@
     --mainText:black;
     --secondaryText: #495156;
     --themeDotBorder: #24292e;
+    --previewBg: rgb(215, 249, 243, 0.8)
 }
 html, body{
     padding: 0;
@@ -142,8 +143,37 @@ h6{ font-size: 16px;}
 .right-column {
     grid-area: right-column; 
 }
-
-
+#preview {
+    width: 300px;
+    border: 1.5px solid #153ddc;
+    background-color: rgb(193, 212, 254);
+    padding: 15px;
+    position: relative;
+}
+.corner{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid #153ddc;
+    background-color: white;
+    position: absolute;
+}
+#corner-tl{
+    top: -5px;
+    left: -5px;
+}
+#corner-tr{
+    top: -5px;
+    right: -5px;
+}
+#corner-bl{
+    bottom: -5px;
+    left: -5px;
+}
+#corner-br{
+    bottom: -5px;
+    right: -5px;
+}
 
 @media screen and (max-width: 1200px) {
     .main-container{
