@@ -156,8 +156,8 @@ h6{ font-size: 16px;}
 }
 #preview-shadow {
     background-color: rgb(63, 99, 142);
-    width: 300px;
-    height: 180px;
+    width: 310px;
+    height: 280px;
     padding-left: 20px;
     /* padding-top: 30px; */
 }
@@ -184,6 +184,28 @@ h6{ font-size: 16px;}
 #corner-br{
     bottom: -5px;
     right: -5px;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewBg);
+}
+.contact{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#social-img{
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
