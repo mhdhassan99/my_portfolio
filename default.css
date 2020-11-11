@@ -141,14 +141,25 @@ h6{ font-size: 16px;}
 }
 
 .right-column {
-    grid-area: right-column; 
+    grid-area: right-column;
+    display: grid;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px
 }
 #preview {
     width: 300px;
     border: 1.5px solid #153ddc;
-    background-color: rgb(193, 212, 254);
+    background-color: var(--previewBg);
     padding: 15px;
     position: relative;
+}
+#preview-shadow {
+    background-color: rgb(63, 99, 142);
+    width: 300px;
+    height: 180px;
+    padding-left: 20px;
+    /* padding-top: 30px; */
 }
 .corner{
     width: 7px;
@@ -179,4 +190,18 @@ h6{ font-size: 16px;}
     .main-container{
         width: 95%
     }
+}
+
+@media screen and (max-width: 800px) {
+    .intro-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-column'
+            'right-column'
+            ;
+    }  
+    .right-column{
+        justify-content: center;
+    } 
 }
